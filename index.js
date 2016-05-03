@@ -4,7 +4,7 @@ const askFor = (prop) => {
 	let res = prompt(prop);
 
   if (res == null) {
-  	let exit = confirm('stop?');
+    let exit = confirm('stop?');
 
     return exit ? null : askFor(prop);
   }
@@ -13,10 +13,10 @@ const askFor = (prop) => {
 }
 
 const prompty = (props) => {
-	let res = {};
+  let res = {};
 
   for (let i = 0; i < props.length; i++) {
-  	let temp = askFor(props[i].label);
+    let temp = askFor(props[i].label);
 
     if (!temp) return null;
   	res[props[i].field] = temp;
