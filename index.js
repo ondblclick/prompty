@@ -4,7 +4,7 @@ const askFor = (prop) => {
   let res = prompt(prop);
 
   if (res == null) {
-    let exit = confirm('stop?');
+    let exit = confirm('Cancel the wizard?');
 
     return exit ? null : askFor(prop);
   }
