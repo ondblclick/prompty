@@ -1,7 +1,7 @@
 'use strict';
 
 const askFor = (prop) => {
-	let res = prompt(prop);
+  let res = prompt(prop);
 
   if (res == null) {
     let exit = confirm('stop?');
